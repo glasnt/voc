@@ -1,0 +1,8 @@
+language: python
+python:
+  - "3.4"
+install:
+  - "pip install ."
+script: 
+  - "python -m voc tests/example.py org.pyee"
+  - "java -XX:-UseSplitVerifier --classpath python.jar:. example"
